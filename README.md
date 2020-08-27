@@ -13,7 +13,7 @@ A Discord bot template for deployment on Heroku.
 NOTE: I recommend hosting this bot yourself with the Heroku One-Click deploy button below, as I will most likely be shutting down my own instance until I need to use it. 
 
 ## Deployment
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/contejus/DiscordBotTemplateHeroku/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/contejus/Muter/tree/master)
 
 ## Setup
 1. Clone repository using `git clone https://github.com/contejus/DiscordBotTemplateHeroku.git`.
