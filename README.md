@@ -2,8 +2,8 @@
   <img src="./logo.png" width="200" title="Muter" alt="Muter">
 </p>
 
-# Discord Bot Template
-A Discord bot template for deployment on Heroku.
+# Muter
+A Discord bot that mutes everyone in a voice channel for games such as Among Us. 
 
 ## Add to Server
 <a href="https://discord.com/api/oauth2/authorize?client_id=748619099604647988&permissions=30410000&scope=bot">
