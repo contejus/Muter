@@ -18,8 +18,18 @@ async def on_ready():
 async def test(ctx):
     await ctx.send("Testing, testing, 1 2 3.")
 
-@bot.command(name='muteall', help='Mutes all users in a Discord channel.')
+@bot.command(name='mute', help='Mutes all users in a Discord channel.')
 async def mute(ctx):
-    await ctx.send("Testing, testing, 1 2 3.")
+    vc_members = ctx.author.voice.channel.members
+    for member in vc_members:
+        await member.edit(mute=True, deafen=True)
+    await ctx.send("Muted all members in the " + str(ctx.author.voice.channel) + " voice channel.")
+
+@bot.command(name='unmute', help='Unmutes all users in a Discord channel.')
+async def unmute(ctx):
+    vc_members = ctx.author.voice.channel.members
+    for member in vc_members:
+        await member.edit(mute=False, deafen=False)
+    await ctx.send("Unmuted all members in the " + str(ctx.author.voice.channel) + " voice channel.")
 
 bot.run(TOKEN)

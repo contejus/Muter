@@ -3,7 +3,7 @@
     "description": "A Discord bot that mutes everyone in a voice channel for games such as Among Us.",
     "repository": "https://github.com/contejus/Muter",
     "logo": "https://raw.githubusercontent.com/contejus/Muter/master/logo.png",
-    "keywords": ["discord", "bot", "discord.py"],
+    "keywords": ["discord", "bot", "discord.py", "muter"],
     "env": {
         "DISCORD_TOKEN": {
           "description": "Discord bot key, used to autheticate with Discord APIs."

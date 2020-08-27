@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./logo.png" width="200" title="RouletteBot" alt="RouletteBot">
+  <img src="./logo.png" width="200" title="Muter" alt="Muter">
 </p>
 
 # Discord Bot Template
 A Discord bot template for deployment on Heroku.
 
 ## Add to Server
-<a href="ADD_YOUR_BOT_URL_HERE">
+<a href="https://discord.com/api/oauth2/authorize?client_id=748619099604647988&permissions=30410000&scope=bot">
     <img src="https://discord.com/assets/e4923594e694a21542a489471ecffa50.svg" alt="Discord link" width="150"/>
 </a>
 
@@ -16,8 +16,8 @@ NOTE: I recommend hosting this bot yourself with the Heroku One-Click deploy but
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/contejus/Muter/tree/master)
 
 ## Setup
-1. Clone repository using `git clone https://github.com/contejus/DiscordBotTemplateHeroku.git`.
-2. Change directory using `cd DiscordBotTemplateHeroku/`
+1. Clone repository using `git clone https://github.com/contejus/Muter.git`.
+2. Change directory using `cd Muter/`
 3. Create a `.env` file with the following contents:
     `DISCORD_TOKEN=<YOUR_DISCORD_TOKEN_HERE>`
 4. Create a Discord bot and Discord API token using the Discord Developer Portal, as well as a custom invite to allow the bot to join your server.
