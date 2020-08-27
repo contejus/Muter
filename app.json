@@ -1,8 +1,8 @@
 {
-    "name": "Discord Bot",
-    "description": "A Discord bot.",
-    "repository": "https://github.com/contejus/DiscordBotTemplateHeroku",
-    "logo": "https://raw.githubusercontent.com/contejus/DiscordBotTemplateHeroku/master/logo.png",
+    "name": "Muter",
+    "description": "A Discord bot that mutes everyone in a voice channel for games such as Among Us.",
+    "repository": "https://github.com/contejus/Muter",
+    "logo": "https://raw.githubusercontent.com/contejus/Muter/master/logo.png",
     "keywords": ["discord", "bot", "discord.py"],
     "env": {
         "DISCORD_TOKEN": {
