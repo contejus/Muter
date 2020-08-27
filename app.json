@@ -1,0 +1,13 @@
+{
+    "name": "Discord Bot",
+    "description": "A Discord bot.",
+    "repository": "https://github.com/contejus/DiscordBotTemplateHeroku",
+    "logo": "https://raw.githubusercontent.com/contejus/DiscordBotTemplateHeroku/master/logo.png",
+    "keywords": ["discord", "bot", "discord.py"],
+    "env": {
+        "DISCORD_TOKEN": {
+          "description": "Discord bot key, used to autheticate with Discord APIs."
+        }
+      }
+}
+  
