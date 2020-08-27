@@ -1,1 +1,1 @@
-worker: python roulette.py
+worker: python bot.py
