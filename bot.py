@@ -40,7 +40,13 @@ async def checkreacts(ctx):
     for emoji in emojis:
         await msg1.add_reaction(emoji)
 
-
+@bot.event
+async def on_raw_reaction_add(payload):
+    channel = await bot.fetch_channel(payload.channel_id)
+    message = await channel.fetch_message(payload.message_id)
+    if message.author.name == "Muter":
+        print(payload.emoji)
+    emoji = payload.emoji
 
 
 bot.run(TOKEN)
