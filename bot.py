@@ -3,6 +3,7 @@ import random
 
 from discord.ext import commands
 from discord.ext.commands.errors import CommandInvokeError
+from discord.utils import get
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -31,5 +32,15 @@ async def unmute(ctx):
     for member in vc_members:
         await member.edit(mute=False, deafen=False)
     await ctx.send("Unmuted all members in the " + str(ctx.author.voice.channel) + " voice channel.")
+
+@bot.command(name="muter", pass_context=True)
+async def checkreacts(ctx):
+    msg1 = await ctx.send("React to me with :mute: to mute or :loud_sound: to unmute!")
+    emojis = ['🔇', '🔊']
+    for emoji in emojis:
+        await msg1.add_reaction(emoji)
+
+
+
 
 bot.run(TOKEN)
