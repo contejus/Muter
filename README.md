@@ -6,7 +6,7 @@
 A Discord bot that mutes everyone in a voice channel for games such as Among Us. 
 
 ## Add to Server
-<a href="https://discord.com/api/oauth2/authorize?client_id=748619099604647988&permissions=30410000&scope=bot">
+<a href="https://discord.com/api/oauth2/authorize?client_id=748619099604647988&permissions=12591104&scope=bot">
     <img src="https://discord.com/assets/e4923594e694a21542a489471ecffa50.svg" alt="Discord link" width="150"/>
 </a>
 

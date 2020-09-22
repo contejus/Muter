@@ -33,7 +33,7 @@ async def unmute(ctx):
         await member.edit(mute=False, deafen=False)
     await ctx.send("Unmuted all members in the " + str(ctx.author.voice.channel) + " voice channel.")
 
-@bot.command(name="muter", pass_context=True)
+@bot.command(name="au", pass_context=True)
 async def checkreacts(ctx):
     msg1 = await ctx.send("React to me with :mute: to mute or :loud_sound: to unmute!")
     emojis = ['🔇', '🔊']
@@ -44,9 +44,15 @@ async def checkreacts(ctx):
 async def on_raw_reaction_add(payload):
     channel = await bot.fetch_channel(payload.channel_id)
     message = await channel.fetch_message(payload.message_id)
-    if message.author.name == "Muter":
-        print(payload.emoji)
-    emoji = payload.emoji
-
+    if message.author.name == "Muter" and payload.member.name != "Muter":
+        vc_members = payload.member.voice.channel.members
+        if str(payload.emoji) == str("🔇"):
+            await message.remove_reaction(str("🔊"), payload.member)
+            for member in vc_members:
+                await member.edit(mute=True, deafen=True)
+        elif str(payload.emoji) == str("🔊"):
+            await message.remove_reaction(str("🔇"), payload.member)
+            for member in vc_members:
+                await member.edit(mute=False, deafen=False)
 
 bot.run(TOKEN)
