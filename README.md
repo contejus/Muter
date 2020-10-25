@@ -15,6 +15,15 @@ NOTE: I recommend hosting this bot yourself with the Heroku One-Click deploy but
 ## Deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/contejus/Muter/tree/master)
 
+## Commands 
+
+| Command | Function |
+| ----------- | ----------- |
+| !test | Sends a ping to the bot to test if the bot is responding. |
+| !mute | Mutes and deafens all users in the command issuer's current voice channel. |
+| !unmute | Unmutes and undeafens all users in the command issuer's current voice channel. |
+| !au | Prints a message in the current text channel, with emojis that, when clicked, mute/unmute members of the the user's current voice channel. |
+
 ## Setup
 1. Clone repository using `git clone https://github.com/contejus/Muter.git`.
 2. Change directory using `cd Muter/`
